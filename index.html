@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="container-fluid">
+    <!-- Aside del botón de contacto -->
+    <aside class="contact d-none d-xl-flex" onclick="contact()">
+      <figure>
+        <img src="00_Recursos/Line.svg" alt="" />
+      </figure>
+      <span class="ms-3">Contact us</span>
+    </aside>
+
+    <!-- Main -->
+    <div class="container">
+      <nav class="row d-flex justify-content-between align-items-center">
+        <div class="col">
+          <figure>
+            <img src="00_Recursos\Logo.svg" alt="" />
+          </figure>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <div class="d-none d-md-flex">
+            <div class="mx-2"><a href="#">Menu 1</a></div>
+            <div class="mx-2"><a href="#">Menu 2</a></div>
+            <div class="mx-2"><a href="#">Menu 3</a></div>
+          </div>
+          <figure class="d-md-none">
+            <img src="00_Recursos/Menu.svg" alt="" />
+          </figure>
+        </div>
+      </nav>
+
+      <!-- Header de LOREM IPSUM con la taza -->
+      <header class="row">
+        <div
+          class="position-relative d-flex justify-content-center align-items-center"
+        >
+          <div class="position-absolute w-100">
+            <div class="row">
+              <div class="text-1 position-relative">LOREM</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="text-1 position-relative">IPSUM</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="text-1 position-relative">DOLOR</div>
+            </div>
+          </div>
+          <figure class="position-absolute">
+            <img src="00_Recursos/Mug1.png" alt="" />
+          </figure>
+        </div>
+      </header>
+
+      <!-- Sección del texto -->
+      <section class="row">
+        <div class="col-md-8 offset-md-4 d-flex align-items-center">
+          <li class="text-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            <b>vulputate dui efficitur</b> ultrices pharetra. Praesent tempor
+            mollis purus nec fringilla.
+          </li>
+        </div>
+      </section>
+
+      <!-- Sección de la camiseta -->
+      <section class="row">
+        <article
+          class="col-md-6 d-flex flex-column justify-content-center position-relative"
+        >
+          <figure class="position-absolute product">
+            <img src="00_Recursos\Tshirt1.png" alt="" />
+          </figure>
+          <div
+            class="position-absolute d-flex flex-column justify-content-center"
+          >
+            <span class="text-3">T-shirt</span>
+            <span class="text-4"
+              >Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor
+              mollis purus.</span
+            >
+            <div class="d-flex justify-content-between align-items-center mt-5">
+              <div class="d-flex">
+                <div
+                  class="btn-product-color bg-dark"
+                  onclick="changeProductColor(2, this)"
+                ></div>
+                <div
+                  class="btn-product-color ms-3 bg-primary"
+                  onclick="changeProductColor(1, this)"
+                ></div>
+              </div>
+
+              <button class="btn d-flex align-items-center">
+                Buy
+                <img src="00_Recursos/Arrow .svg" alt="" class="ms-3 mt-2" />
+              </button>
+            </div>
+            <hr />
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección de la botella -->
+      <section class="row">
+        <article
+          class="col-12 col-md-6 offset-md-6 d-flex flex-column justify-content-center position-relative"
+        >
+          <figure class="position-absolute">
+            <img src="00_Recursos\Bottle1.png" alt="" />
+          </figure>
+          <div
+            class="position-absolute d-flex flex-column justify-content-center"
+          >
+            <span class="text-3">Bottle</span>
+            <span class="text-4"
+              >Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor
+              mollis purus.</span
+            >
+            <div class="d-flex justify-content-between align-items-center mt-5">
+              <div class="d-flex">
+                <div class="btn-product-color ms-3 bg-primary"></div>
+              </div>
+
+              <button class="btn d-flex align-items-center">
+                Buy
+                <img src="00_Recursos/Arrow .svg" alt="" class="ms-3 mt-2" />
+              </button>
+            </div>
+            <hr />
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <footer class="row bg-dark text-white p-5">
+      <div class="col-12 col-md-5 d-flex flex-column text-5 order-md-1 mb-5">
+        <span>hello@workoholics.es</span>
+        <span>+34 944 059 957</span>
+      </div>
+      <div class="col-12 col-md-7 order-md-2">
+        <span class="text-6">We love what we do.</span><br />
+        <span class="text-6">We are Worköholics.</span>
+        <form action="" class="mt-5">
+          <input type="text" placeholder="E-mail" />
+          <hr />
+          <div class="d-flex justify-content-between">
+            <div>
+              <input type="checkbox" />
+              <label for=""
+                >I have read and accepted the
+                <a href="#">Terms and Conditions.</a></label
+              >
+            </div>
+
+            <button class="btn d-flex align-items-center text-white">
+              Submit
+              <img src="00_Recursos/Arrow2.svg" alt="" class="ms-3 mt-2" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
